@@ -4,7 +4,7 @@ import React from "react";
 const LandingPage = () => {
   return (
     <div>
-      <UserButton afterSwitchSessionUrl="/" />
+      <h1>Welcome to dashboard page</h1>
     </div>
   );
 };

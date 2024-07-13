@@ -1,7 +1,15 @@
-import React from "react";
+("");
+import { UserButton } from "@clerk/nextjs";
 
-const Navbar = () => {
-  return <div>Navbar</div>;
+import { MobileSidebar } from "@/components/mobile-sidebar";
+
+export const Navbar = async () => {
+  return (
+    <div className="flex items-center p-4">
+      <MobileSidebar />
+      <div className="flex w-full justify-end">
+        <UserButton afterSignOutUrl="/" />
+      </div>
+    </div>
+  );
 };
-
-export default Navbar;
